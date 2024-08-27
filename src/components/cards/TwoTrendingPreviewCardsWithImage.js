@@ -22,9 +22,9 @@ const HeadingInfoContainer = tw.div`text-center xl:text-right max-w-lg xl:max-w-
 const HeadingTitle = tw(SectionHeading)`xl:text-right leading-tight`;
 const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-8`;
 const PrimaryLink = styled(PrimaryLinkBase)`
-  ${tw`inline-flex justify-center xl:justify-start items-center mt-8 text-lg`}
+  ${tw`inline-flex flex-row-reverse justify-center xl:justify-start items-center mt-8 text-lg`}
   svg {
-    ${tw`mr-2 w-5 h-5`}
+    ${tw`ml-2 w-5 h-5 rotate-180`}
   }
 `;
 
@@ -50,7 +50,7 @@ const CardMeta = styled.div`
 const CardMetaFeature = styled.div`
   ${tw`flex items-center mt-4`}
   svg {
-    ${tw`w-5 h-5 mr-1`}
+    ${tw`w-5 h-5 ml-1`}
   }
 `;
 const CardAction = tw(PrimaryButtonBase)`w-full mt-8`;

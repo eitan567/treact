@@ -11,7 +11,7 @@ const Heading = tw(SectionHeading)`text-right lg:text-4xl xl:text-5xl`;
 
 const PopularPostsContainer = tw.div`lg:w-2/3`;
 const PostsContainer = tw.div`mt-12 flex flex-col sm:flex-row sm:justify-between lg:justify-start`;
-const Post = tw(motion.a)`block sm:max-w-sm cursor-pointer mb-16 last:mb-0 sm:mb-0 sm:odd:mr-8 lg:mr-8 xl:mr-16`;
+const Post = tw(motion.a)`block sm:max-w-sm cursor-pointer mb-16 last:mb-0 sm:mb-0 sm:odd:ml-8 lg:ml-8 xl:ml-16`;
 const Image = styled(motion.div)(props => [
   `background-image: url("${props.$imageSrc}");`,
   tw`h-64 bg-cover bg-center rounded`
@@ -20,7 +20,7 @@ const Title = tw.h5`mt-6 text-xl font-bold transition duration-300 group-hover:t
 const Description = tw.p`mt-2 font-medium text-secondary-100 leading-loose text-sm`;
 const AuthorInfo = tw.div`mt-6 flex items-center`;
 const AuthorImage = tw.img`w-12 h-12 rounded-full`;
-const AuthorNameAndProfession = tw.div`ml-4`;
+const AuthorNameAndProfession = tw.div`mr-4`;
 const AuthorName = tw.h6`font-semibold text-lg`;
 const AuthorProfile = tw.p`text-secondary-100 text-sm`;
 
@@ -30,7 +30,7 @@ const RecentPostsContainer = styled.div`
     ${tw`flex flex-wrap lg:flex-col`}
   }
   ${Post} {
-    ${tw`flex justify-between mb-10 max-w-none w-full sm:w-1/2 lg:w-auto sm:odd:pr-12 lg:odd:pr-0 mr-0`}
+    ${tw`flex justify-between mb-10 max-w-none w-full sm:w-1/2 lg:w-auto sm:odd:pr-12 lg:odd:pr-0 ml-0`}
   }
   ${Title} {
     ${tw`text-base xl:text-lg mt-0 ml-4 lg:max-w-xs`}

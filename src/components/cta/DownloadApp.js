@@ -22,7 +22,7 @@ const LinksContainer = tw.div`mt-8 lg:mt-16 flex flex-col items-center sm:block`
 const Link = styled.a`
   ${tw`w-56 p-3 sm:p-4 text-sm sm:text-base font-bold uppercase tracking-wider rounded-full inline-flex justify-center items-center mt-6 first:mt-0 sm:mt-0 sm:mr-8 first:mr-0 bg-gray-100 hocus:bg-gray-300 text-gray-900 hocus:text-gray-900 shadow hover:shadow-lg focus:shadow-outline focus:outline-none transition duration-300`}
   img {
-    ${tw`inline-block h-8 mr-3`}
+    ${tw`inline-block h-8 ml-3`}
   }
   span {
     ${tw`leading-none inline-block`}

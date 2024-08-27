@@ -39,9 +39,9 @@ const Card = styled.a`
   }
 
   .link {
-    ${tw`mt-auto inline-flex items-center pt-5 text-sm font-bold text-primary-300 leading-none hocus:text-primary-900 transition duration-300`}
+    ${tw`mt-auto inline-flex flex-row-reverse items-center pt-5 text-sm font-bold text-primary-300 leading-none hocus:text-primary-900 transition duration-300`}
     .icon {
-      ${tw`mr-2 w-4`}
+      ${tw`ml-2 w-4 rotate-180`}
     }
   }
 `;

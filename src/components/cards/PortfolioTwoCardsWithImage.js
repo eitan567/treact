@@ -13,20 +13,20 @@ const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const ThreeColumn = tw.div`flex flex-wrap`;
-const Column = tw.div`xl:mr-12 xl:last:mr-0`;
+const Column = tw.div`xl:ml-12 xl:last:ml-0`;
 const HeadingColumn = styled(Column)(props => [
   tw`w-full xl:w-5/12`,
-  props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:mr-12 xl:mr-0`
+  props.textOnLeft ? tw`xl:order-first` : tw`xl:order-last xl:mr-12 xl:ml-0`
 ]);
-const CardColumn = tw(Column)`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:mr-auto`;
+const CardColumn = tw(Column)`w-full md:w-1/2 xl:w-3/12 mt-16 xl:mt-0 xl:last:ml-auto`;
 
 const HeadingInfoContainer = tw.div`text-center xl:text-right max-w-lg xl:max-w-none mx-auto xl:mx-0`;
 const HeadingTitle = tw(SectionHeading)`mt-4 xl:text-right leading-tight`;
 const HeadingDescription = tw.p`text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 mt-8`;
 const PrimaryLink = styled(PrimaryLinkBase)`
-  ${tw`inline-flex justify-center xl:justify-start items-center mt-8 text-lg`}
+  ${tw`inline-flex flex-row-reverse justify-center xl:justify-start items-center mt-8 text-lg`}
   svg {
-    ${tw`mr-2 w-5 h-5`}
+    ${tw`ml-2 w-5 h-5 rotate-180`}
   }
 `;
 
@@ -49,9 +49,9 @@ const CardMeta = styled.div`
 `;
 
 const CardMetaFeature = styled.div`
-  ${tw`flex items-center mt-4 ml-4 last:mr-0`}
+  ${tw`flex items-center mt-4 mr-4 last:ml-0`}
   svg {
-    ${tw`w-5 h-5 mr-1`}
+    ${tw`w-5 h-5 ml-1`}
   }
 `;
 const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;

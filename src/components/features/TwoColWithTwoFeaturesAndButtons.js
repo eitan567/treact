@@ -14,7 +14,7 @@ const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto`;
 const TextColumn = styled(Column)(props => [
   tw`md:w-7/12 mt-16 md:mt-0`,
-  props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
+  props.textOnLeft ? tw`md:ml-12 lg:ml-16 md:order-first` : tw`md:mr-12 lg:mr-16 md:order-last`
 ]);
 
 const Image = styled.div(props => [
@@ -39,7 +39,7 @@ const FeatureIconContainer = styled.div`
   }
 `;
 
-const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-right`;
+const FeatureText = tw.div`mt-4 md:mt-0 md:mr-4 text-center md:text-right`;
 const FeatureHeading = tw.div`font-bold text-lg text-primary-500`;
 const FeatureDescription = tw.div`mt-1 text-sm`;
 

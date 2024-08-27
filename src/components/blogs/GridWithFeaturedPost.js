@@ -22,7 +22,7 @@ const PostText = tw.div`flex-1 px-6 py-8`
 const PostTitle = tw.h6`font-bold group-hocus:text-primary-500 transition duration-300 `;
 const PostDescription = tw.p``;
 const AuthorInfo = tw.div`flex`;
-const AuthorImage = tw.img`w-12 h-12 rounded-full mr-3`;
+const AuthorImage = tw.img`w-12 h-12 rounded-full ml-3`;
 const AuthorTextInfo = tw.div`text-xs text-gray-600`;
 const AuthorName = tw.div`font-semibold mt-2`;
 const AuthorProfile = tw.div`pt-1 font-medium`;
@@ -33,7 +33,7 @@ const PostContainer = styled.div`
   ${props => props.featured && css`
     ${tw`w-full sm:w-full lg:w-2/3`}
     ${Post} {
-      ${tw`sm:flex-row items-center sm:pr-3`}
+      ${tw`sm:flex-row items-center sm:pl-3`}
     }
     ${PostImage} {
       ${tw`sm:h-80 sm:min-h-full w-full sm:w-1/2 rounded-t sm:rounded-t-none sm:rounded-l`}

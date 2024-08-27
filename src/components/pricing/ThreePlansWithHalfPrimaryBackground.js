@@ -27,7 +27,7 @@ const PlanHeader = styled.div`
     ${tw`flex flex-wrap flex-col sm:flex-row justify-between items-center`}
   }
   .name {
-    ${tw`lg:text-lg xl:text-xl font-bold uppercase tracking-wider mr-3`}
+    ${tw`lg:text-lg xl:text-xl font-bold uppercase tracking-wider ml-3`}
   }
   .featuredText {
     ${tw`text-xs font-bold px-3 rounded py-2 uppercase bg-green-300 text-green-900 leading-none mt-4 sm:mt-0 w-full sm:w-auto text-center`}
@@ -56,7 +56,7 @@ const PlanFeatures = styled.ul`
       ${tw`w-6 h-6 text-primary-500 flex-shrink-0`}
     }
     .text {
-      ${tw`font-semibold text-primary-900 tracking-wide ml-3`}
+      ${tw`font-semibold text-primary-900 tracking-wide mr-3`}
     }
   }
 `;

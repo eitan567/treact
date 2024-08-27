@@ -37,7 +37,7 @@ const Heading = tw(
 const Description = tw.p`mt-8 text-center md:text-right text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const Features = tw.div`mx-auto md:mx-0 flex flex-col lg:flex-row max-w-xs lg:max-w-none`;
-const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col md:mr-8 last:mr-0`;
+const Feature = tw.div`mt-10 lg:mt-8 flex items-center md:items-start flex-col md:ml-8 last:ml-0`;
 
 const FeatureHeadingContainer = tw.div`flex items-center`;
 const FeatureIconContainer = styled.div`

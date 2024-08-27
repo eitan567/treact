@@ -13,7 +13,7 @@ const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative`;
 const TextColumn = styled(Column)(props => [
   tw`md:w-7/12 mt-16 md:mt-0`,
-  props.textOnLeft ? tw`md:ml-12 lg:ml-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
+  props.textOnLeft ? tw`md:ml-12 lg:ml-16 md:order-first` : tw`md:mr-12 lg:mr-16 md:order-last`
 ]);
 
 const Image = styled.div(props => [

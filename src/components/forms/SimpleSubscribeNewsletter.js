@@ -11,10 +11,10 @@ const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const Row = tw.div`flex items-center justify-center flex-col lg:flex-row px-8`
 const TextColumn = tw.div`flex items-center flex-col sm:flex-row`
-const FormColumn = tw.div`mt-12 lg:mt-0 lg:ml-16 w-full sm:w-auto`
+const FormColumn = tw.div`mt-12 lg:mt-0 lg:mr-16 w-full sm:w-auto`
 
 const EmailNewsletterIcon = tw(EmailNewsletterIconBase)`w-16 h-16 text-green-500`
-const HeadingInfoContainer = tw.div`sm:ml-6 mt-6 sm:mt-0`
+const HeadingInfoContainer = tw.div`sm:mr-6 mt-6 sm:mt-0`
 const Heading = tw(SectionHeading)`text-gray-100 sm:text-right leading-none`
 const Description = tw.p`text-gray-500 font-medium text-sm max-w-sm mt-2 sm:mt-1 text-center sm:text-right`
 
@@ -37,8 +37,8 @@ export default () => {
           </TextColumn>
           <FormColumn>
           <Form>
-            <Input name="newsletter" type="email" placeholder="Your Email Address" />
             <Button type="submit">Subscribe Now</Button>
+            <Input name="newsletter" type="email" placeholder="Your Email Address" />
           </Form>
           </FormColumn>
         </Row>

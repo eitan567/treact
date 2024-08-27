@@ -34,8 +34,8 @@ const CustomerInfo = tw.div`px-5 lg:px-10 text-center md:text-right mt-4 md:mt-0
 const CustomerName = tw.h5`font-bold text-lg lg:text-xl xl:text-2xl text-primary-500`;
 const CustomerTitle = tw.p`font-medium text-sm`;
 
-const QuotesLeft = tw(QuotesLeftIcon)`w-8 h-8 lg:w-10 lg:h-10 text-primary-500 absolute top-0 left-0`;
-const QuotesRight = tw(QuotesRightIcon)`w-8 h-8 lg:w-10 lg:h-10 text-primary-500 absolute bottom-0 right-0`;
+const QuotesLeft = tw(QuotesRightIcon)`w-8 h-8 lg:w-10 lg:h-10 text-primary-500 absolute top-0 right-0`;
+const QuotesRight = tw(QuotesLeftIcon)`w-8 h-8 lg:w-10 lg:h-10 text-primary-500 absolute bottom-0 left-0`;
 
 const SliderControlButtonContainer = styled.div`
   ${tw`absolute top-0 h-full flex items-end md:items-center z-20`}

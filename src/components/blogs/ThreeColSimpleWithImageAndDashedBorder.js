@@ -26,9 +26,9 @@ const Image = styled.div(props => [
 const Details = tw.div`p-6 rounded border-2 border-t-0 rounded-t-none border-dashed border-primary-100 flex-1 flex flex-col items-center text-center lg:block lg:text-right`;
 const MetaContainer = tw.div`flex items-center`;
 const Meta = styled.div`
-  ${tw`text-secondary-100 font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
+  ${tw`text-secondary-100 font-medium text-sm flex items-center leading-none ml-6 last:mr-0`}
   svg {
-    ${tw`w-4 h-4 mr-1`}
+    ${tw`w-4 h-4 ml-1`}
   }
 `;
 

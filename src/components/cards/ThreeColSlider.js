@@ -15,7 +15,7 @@ const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
 
 const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 const Heading = tw(SectionHeading)``;
-const Controls = tw.div`flex items-center`;
+const Controls = tw.div`flex items-center flex-row-reverse`;
 const ControlButton = styled(PrimaryButtonBase)`
   ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
   svg {
@@ -34,14 +34,14 @@ const CardSlider = styled(Slider)`
     ${tw`h-auto flex justify-center mb-1`}
   }
 `;
-const Card = tw.div`h-full flex! flex-col sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none`;
+const Card = tw.div`h-full flex! flex-col sm:border max-w-sm sm:rounded-tr-4xl sm:rounded-bl-5xl relative focus:outline-none`;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
+  tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tr-4xl`
 ]);
 
 const TextInfo = tw.div`py-6 sm:px-10 sm:py-6`;
-const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
+const TitleReviewContainer = tw.div`flex flex-col sm:flex-row-reverse sm:justify-between sm:items-center`;
 const Title = tw.h5`text-2xl font-bold`;
 
 const RatingsInfo = styled.div`
@@ -52,19 +52,19 @@ const RatingsInfo = styled.div`
 `;
 const Rating = tw.span`ml-2 font-bold`;
 
-const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4`;
+const Description = tw.p`text-sm leading-loose mt-2 text-right sm:mt-4`;
 
-const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4`;
-const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
+const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row-reverse mt-2 sm:mt-4`;
+const IconWithText = tw.div`flex items-center flex-row-reverse mr-6 my-2 sm:my-0`;
 const IconContainer = styled.div`
   ${tw`inline-block rounded-full p-2 bg-gray-700 text-gray-100`}
   svg {
     ${tw`w-3 h-3`}
   }
 `;
-const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
+const Text = tw.div`mr-2 text-sm font-semibold text-gray-800`;
 
-const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-br-4xl py-3 sm:py-6`;
+const PrimaryButton = tw(PrimaryButtonBase)`mt-auto sm:text-lg rounded-none w-full rounded sm:rounded-none sm:rounded-bl-4xl py-3 sm:py-6`;
 export default () => {
   // useState is used instead of useRef below because we want to re-render when sliderRef becomes available (not null)
   const [sliderRef, setSliderRef] = useState(null);

@@ -20,7 +20,7 @@ const Image = styled.div(props => [
   tw`hidden lg:block rounded h-144 bg-center`
 ]);
 
-const FAQContent = tw.div`lg:ml-12`;
+const FAQContent = tw.div`lg:mr-12`;
 const Subheading = tw(SubheadingBase)`mb-4 text-center lg:text-right`;
 const Heading = tw(SectionHeading)`lg:text-right`;
 const Description = tw.p`max-w-xl text-center mx-auto lg:mx-0 lg:text-right lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-secondary-100`;

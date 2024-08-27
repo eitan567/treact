@@ -34,7 +34,7 @@ const HeroRow = tw(Row)`flex-col lg:flex-row justify-between items-center pt-8 l
 const Column = tw.div`flex-1`;
 
 const UpdateNotice = tw(Column)`w-full flex-auto mb-4 sm:mb-8 rounded px-4 py-3 sm:px-5 sm:py-4 bg-orange-100 text-orange-800 flex items-center sm:items-start md:items-center justify-center lg:justify-start border border-orange-200 text-xs sm:text-sm text-center sm:text-right md:leading-none`;
-const UpdateNoticeIcon = tw(RadioIcon)`w-0 sm:w-5 sm:mr-3`;
+const UpdateNoticeIcon = tw(RadioIcon)`w-0 sm:w-5 sm:ml-3`;
 
 const TextColumn = tw(Column)`mx-auto lg:mr-0 max-w-2xl lg:max-w-xl xl:max-w-2xl flex-shrink-0`;
 const Heading = tw(HeadingBase)`text-center lg:text-right text-primary-900 leading-snug`;

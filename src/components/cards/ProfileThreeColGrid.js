@@ -33,7 +33,7 @@ const CardContent = styled.div`
 const CardLinks = styled.div`
   ${tw`mt-6 flex`}
   .link {
-    ${tw`mr-8 last:mr-0 text-gray-400 hocus:text-primary-500 transition duration-300`}
+    ${tw`ml-8 last:ml-0 text-gray-400 hocus:text-primary-500 transition duration-300`}
     .icon {
       ${tw`fill-current w-6 h-6`}
     }
